@@ -19,7 +19,7 @@ form>div{
 }
 form{
   background: #ffffff69;
-  width: 600px;
+  width: 35rem;
   padding: 40px;
   margin: 20px;
 }
@@ -34,7 +34,6 @@ input{
 input[type=text]:focus{
   border-bottom: 2px solid rgb(40, 169, 8);
   font-weight:  800;
-
 }
 select{
   width: 250px;
@@ -65,4 +64,41 @@ button:hover{
   border: 2px solid wheat;
   background-color: rgb(130, 2, 2);
   color: whitesmoke;
+}
+@media screen and (max-width: 480px){
+  *{
+    font-size: 1rem;
+    background-repeat:repeat-y;
+  }
+  form{
+    width: 20rem;
+    margin: 0px;
+    padding: 0px;
+
+  }
+  div{
+    padding: 0;
+    padding:1px ;
+    margin-left: 1px;
+  }
+  input{
+    width: 15rem;
+    font-size: 0.8rem;
+    /* font-weight: normal; */
+    margin-left: 10%;
+  }
+  input[type=text]:focus{
+    /* font-weight: normal; */
+  }
+  select{
+    width:15rem;
+    font-size: 0.8rem;
+    margin-left: 10%;
+  }
+  button{
+    font-size: 0.8rem;
+    padding: 8px 14px;
+    margin-bottom: 5%;
+  }
+  
 }
